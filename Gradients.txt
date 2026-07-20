@@ -1,0 +1,32 @@
+GRADIENTS:
+-->A CSS Gradient is a way to display a smooth transition between two or more colors 
+-->It is applied using the background or background-image property.
+
+Types of CSS Gradients:
+
+1)linear-gradient:
+-->A Linear Gradient creates a smooth color transition in a straight line (horizontal, vertical, or diagonal).
+Syntax: background:linear-gradient(direction, color1, color2, ...);
+Example:background:linear-gradient(to left,orange,yellow,green,blue);
+        background:linear-gradient(to top left,orange,yellow,green,blue);
+        background-image:linear-gradient(to right,violet 0% 5%,indigo 5% 10%,blue 10% 15%);
+        background-image:repeating-linear-gradient(to top right,violet 0% 1%,indigo 1% 2%);
+Note: Default direction → to bottom
+
+2)radial-gradient:
+-->A Radial Gradient creates a color transition starting from a center point and spreading outward in a circular or elliptical shape
+Syntax: background: radial-gradient(shape, color1, color2, ...);
+Example:background: radial-gradient(ellipse,red,green,blue,orange,yellow);
+        background: radial-gradient(circle,red,green,blue,orange,yellow);
+        background: radial-gradient(circle,violet 0% 1%,indigo 1% 2%);
+        background: repeating-radial-gradient(circle,violet 0% 1%,indigo 1% 2%);
+Note:
+-->Shape can be circle or ellipse
+-->Default shape → ellipse
+
+3)conic-gradient:
+-->A Conic Gradient creates a color transition around a center point (like a pie chart or color wheel).
+Syntax: background: conic-gradient(color1, color2, ...);
+Example: background: conic-gradient(brown,yellow,purple,pink);
+         background: conic-gradient(brown 0% 2%,yellow 2% 4%,purple 4% 6%,pink 6% 8%);
+         background: repeating-conic-gradient(brown 0% 2%,yellow 2% 4%,purple 4% 6%,pink 6% 8%);

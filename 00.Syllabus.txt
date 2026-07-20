@@ -1,0 +1,18 @@
+Introduction to CSS
+History of Css
+Ways of adding CSS (Inline, Internal, External)
+Selectors
+Colors
+Units 
+Background Properties
+Box Model
+Typography & Fonts
+Display Property 
+Position
+Flex
+Grid
+Media Queries
+Overflow
+Transitions
+Animations
+CSS Variables

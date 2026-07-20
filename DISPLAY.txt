@@ -1,0 +1,49 @@
+DISPLAY Property:
+-->Display property is used to control how elements are rendered (layout behavior) on a webpage.
+
+i)display:inline; 
+-->Makes an element behave like an inline-level element
+Example: h1{
+            display:inline;
+         }
+
+ii)display:block; 
+-->Makes an element behave like a block-level element
+Example: b{
+           display:block;
+         }
+
+Difference Between Block-Level and Inline-Level Elements:
+
+Block-Level-Elements:
+ >Takes full width of the parent container.
+ >Starts on a new line.
+ >Height and Width are applicable
+ >Takes margin and padding on all the sides
+ >Ex:h1 - h6, p .., div, semantic tags (section, article, etc..)
+
+Inline-Level-Elements:
+ >Takes only the content width.
+ >Does not start on a new line. 
+ >Height and Width are not applicable
+ >Takes margin on left and right side but padding on all sides
+ >Ex:span, a, label, formatting tags (b, i, strong etc..)
+
+iii)display:inline-block;
+   >These are the elements that behave like inline but take block-level properties like height and width.
+   >In simple words,Hybrid behavior: inline + block 
+Ex:input,img etc..
+    div{
+      height: 200px;
+      width: 200px;
+      border: 5px solid black;
+      display: inline-block;
+    }
+
+iv)display:none;
+   >Element is completely removed from layout.
+   >No space is reserved
+
+v)visibility: hidden;
+   >Element is hidden but still occupies space.
+   >Space is reserved.

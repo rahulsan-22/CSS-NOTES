@@ -1,0 +1,96 @@
+TRANSFORM:
+-->Transform is used to change the position, size, rotation, or shape of an element.
+-->Transform is mostly used with pseudo-classes like :hover for creating interactive effects.
+
+TRANSFORM PROPERTIES:
+There are mainly 4 transform functions:
+i) translate()
+ii) rotate()
+iii) scale()
+iv) skew()
+
+1)translate():
+-->Used to move an element from its original position.
+-->It moves element horizontally(X-axis) and vertically(Y-axis).
+SYNTAX:
+transform: translate(x,y);
+EXAMPLE:
+transform: translate(100px,50px); /*Moves 100px right and 50px down*/
+
+TYPES OF TRANSLATE:
+i)translateX()
+-->Moves element only horizontally.
+EXAMPLE:
+transform: translateX(100px);
+
+ii)translateY()
+-->Moves element only vertically.
+EXAMPLE:
+transform: translateY(50px);
+
+2)rotate():
+-->Used to rotate an element clockwise or anti-clockwise.
+-->Rotation is measured in degrees(deg).
+SYNTAX:
+transform: rotate(angle);
+EXAMPLE:
+transform: rotate(45deg); /*Rotates element 45 degrees clockwise*/
+
+NOTE:
+-->Positive value rotates clockwise.
+-->Negative value rotates anti-clockwise.
+EXAMPLE:
+transform: rotate(-45deg);
+
+3)scale():
+-->Used to increase or decrease the size of an element.
+-->Scaling can happen horizontally(X-axis) and vertically(Y-axis).
+SYNTAX:
+transform: scale(x,y);
+EXAMPLE:
+transform: scale(1.5,1.5); /Increases size 1.5 times/
+
+NOTE:
+-->Value greater than 1 increases size.
+-->Value less than 1 decreases size.
+
+TYPES OF SCALE:
+i)scaleX()
+-->Scales element only horizontally.
+EXAMPLE:
+transform: scaleX(2);
+
+ii)scaleY()
+-->Scales element only vertically.
+EXAMPLE:
+transform: scaleY(0.5);
+
+4)skew():
+-->Used to tilt an element along X-axis or Y-axis.
+-->It changes the shape of the element.
+SYNTAX:
+transform: skew(x-angle,y-angle);
+EXAMPLE:
+transform: skew(20deg,10deg);
+
+TYPES OF SKEW:
+i)skewX()
+-->Tilts element only along X-axis.
+EXAMPLE:
+transform: skewX(20deg);
+
+ii)skewY()
+-->Tilts element only along Y-axis.
+EXAMPLE:
+transform: skewY(15deg);
+
+MULTIPLE TRANSFORMS:
+-->Multiple transform functions can be applied together.
+SYNTAX:
+transform: function1() function2() function3() function4();
+EXAMPLE:
+transform: rotate(45deg) scale(1.2) translateX(100px) skew(10deg);
+
+NOTE:
+-->Transforms are applied from right to left.
+

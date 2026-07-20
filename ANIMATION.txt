@@ -1,0 +1,82 @@
+ANIMATION:
+-->CSS Animation is used to create smooth and visually appealing movements or effects on web pages.
+-->Unlike transitions, animations can run automatically without user interaction (hover, click, etc.).
+-->Animations allow elements to change styles multiple times using @keyframes.
+
+1)animation-name:
+-->Specifies the name of the @keyframes rule that defines the animation behavior.
+-->It creates the connection between the element and the animation sequence.
+Syntax: animation-name: identifier;
+  The identifier must match the name used in @keyframes.
+Example: animation-name: slider;
+           @keyframes slider {
+               /* animation steps here */
+           }
+
+2)animation-duration:
+-->Specifies how long one complete cycle of animation takes.
+-->Values can be given in seconds (s) or milliseconds (ms).
+Example: animation-duration: 5s;
+
+3)animation-delay:
+-->Specifies the waiting time before the animation starts.
+-->Values can be in seconds (s) or milliseconds (ms).
+Example: animation-delay: 2s;
+
+4)animation-timing-function:
+-->Controls the speed curve or pacing of the animation.
+-->Defines whether the animation starts slowly, ends slowly, or moves at constant speed.
+Syntax: animation-timing-function: timing-function;
+Common values: ease, ease-in, ease-out, ease-in-out, linear, steps().
+Example: animation-timing-function: ease-in-out;
+
+5)animation-direction:
+-->Specifies the direction in which the animation should play.
+Common Values:
+normal → Plays forward
+reverse → Plays backward
+alternate → Forward then backward
+alternate-reverse → Backward then forward
+Example:
+animation-direction: alternate;
+
+6)animation-iteration-count:
+-->Specifies how many times the animation should repeat.
+-->Can accept a number or the keyword infinite.
+Syntax: animation-iteration-count: count;
+Example: animation-iteration-count: infinite;
+
+7)animation
+-->It is a shorthand property used to combine multiple animation properties into a single line.
+-->It can combine:
+animation-name
+animation-duration
+animation-timing-function
+animation-delay
+animation-iteration-count
+animation-direction  
+Example: animation: slider 10s ease 0s alternate infinite;
+
+@keyframes
+-->@keyframes is used to define the stages/steps of an animation.
+-->It specifies how an element's styles should change during the animation.
+-->@keyframes must be linked with animation-name.
+Syntax:
+i)Using from and to
+     @keyframes identifier{                                    
+       from{
+           
+       }to{ 
+                                    
+       }                             
+     }
+ii)Using Percentage Values
+    @keyframes identifier{
+       0%{
+
+       }50%{
+
+       }100%{
+	
+       }
+     }

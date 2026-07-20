@@ -1,0 +1,44 @@
+FONT PROPERTIES:
+-->Font properties in CSS are used to control the appearance, style, size, thickness, and typeface of text displayed on a webpage.
+-->Font properties help you design how text looks in the browser.
+
+1)font-style: 
+-->Used to define the style of the text. 
+-->Default value: normal
+-->Other values:
+   italic → slightly slanted text (semantic importance)
+   oblique → similar to italic but less commonly used
+   Ex:font-style: normal;
+      font-style: italic;
+      font-style: oblique;
+
+2)font-size: 
+-->Used to define the size of the text. 
+   Ex:font-size: 16px;
+      font-size: large;
+
+3)font-weight: 
+-->Used to define the thickness (boldness) of text.. 
+-->Range: 100 to 900
+-->Common values:
+   400 → normal
+   700 → bold
+   Ex:font-weight: 400;
+      font-weight: 700;
+      font-weight: bold;
+Note:
+-->Not all fonts support all weights (depends on font-family).
+-->If font doesn't support a weight → browser approximates it.
+
+4)font-family: 
+-->Used to define the typeface (font style). 
+-->The purpose of using multiple font family is to act like fallback font. 
+    Ex:font-family:cursive;
+       font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+Note:
+-->Writing only one font is not recommended, always use fallback fonts. 
+
+5)font:
+-->Combines multiple font properties in one line.
+Syntax:font:style weight size family; (order matters)
+    Ex:font:italic bold 16px Arial, sans-serif;

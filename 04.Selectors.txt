@@ -1,0 +1,114 @@
+//!Selectors
+-->A CSS Selector is used to select (target) one or more HTML elements so that CSS styles can be applied to them.
+
+//!Types of CSS Selectors:
+-->CSS selectors are broadly classified into the following categories:
+1) Simple Selectors
+2) Combinator Selectors
+3) Pseudo-class Selectors
+4) Pseudo-element Selectors
+5) Attribute Selectors
+
+//!Simple Selectors:
+-->Simple selectors are used to select HTML elements based on their tag name, id, class, or all elements.
+
+//!Types of Simple Selectors:
+-->The five types of simple selectors are:
+1) Element Selector
+2) ID Selector
+3) Class Selector
+4) Group Selector
+5) Universal Selector
+
+//!1. Element Selector
+-->The Element Selector is used to select HTML elements based on their tag name.
+
+//!Syntax:
+tagname{
+    property: value;
+}
+
+//!Example:
+p{
+    color: blue;
+}
+-->This rule applies to all <p> elements on the page.
+
+//!2. ID Selector
+-->The ID Selector is used to uniquely select a single HTML element.
+-->The symbol used is the hash (#).
+
+//!Syntax:
+#idName{
+    property: value;
+}
+
+//!Example:
+#header{
+    background-color: yellow;
+}
+
+//!Rules:
+-->An ID should be unique within a webpage.
+-->One HTML element should have only one ID.
+-->Multiple elements should not use the same ID.
+-->An ID name should not start with a number.
+-->An ID name should not contain spaces.
+
+//!3. Class Selector
+-->The Class Selector is used to select one or more HTML elements having the same class name.
+-->The symbol used is the dot (.).
+
+//!Syntax:
+.className{
+    property: value;
+}
+
+//!Example:
+.text{
+    color: green;
+}
+
+//!Rules:
+-->Multiple elements can share the same class name.
+-->One HTML element can have multiple class names.
+-->A class name should not start with a number.
+-->A class name should not contain spaces.
+
+//!4. Group Selector
+-->The Group Selector is used to apply the same CSS properties to multiple selectors at once.
+-->Selectors are separated using a comma (,).
+
+//!Syntax
+selector1,
+selector2,
+selector3{
+    property: value;
+}
+
+//!Example:
+h1,
+h2,
+p{
+    color: red;
+}
+
+//!5. Universal Selector
+-->The Universal Selector selects all HTML elements on the page.
+-->The symbol used is the asterisk (*).
+
+//!Syntax:
+*{
+    property: value;
+}
+
+//!Example:
+*{
+    font-size:20px;
+}
+
+//!Priorities of Simple Selectors:
+1) Id
+2) Class
+3) Element
+4) Universal

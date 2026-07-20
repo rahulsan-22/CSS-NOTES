@@ -1,0 +1,66 @@
+TRANSITION:
+-->Transition is used to create smooth changes between one CSS state to another.
+-->It helps animate property changes instead of changing them instantly.
+-->Transitions are mostly used with pseudo-classes like :hover, :focus, :active, etc.
+-->Transition makes websites look more interactive and attractive.
+
+TRANSITION PROPERTIES:
+There are mainly 4 transition properties:
+i)transition-property
+ii)transition-duration
+iii)transition-delay
+iv)transition-timing-function:
+
+1)transition-property:
+-->Specifies which CSS property should get the transition effect.
+SYNTAX:
+transition-property: propertyName;
+EXAMPLE:
+transition-property: width; /*Only width property gets transition effect.*/
+transition-property: width,background-color; /*Both width and background-color gets transition effect.*/
+Note:
+If the value is all it Applies transition to all changing properties.
+
+2)transition-duration:
+-->Specifies how long the transition should take.
+-->Duration can be given in:
+   i) seconds (s)
+  ii) milliseconds (ms)
+SYNTAX:
+transition-duration: time;
+EXAMPLE:
+transition-duration: 3s; /*changes smoothly in 3 seconds*/
+NOTE:
+-->If duration is not provided, default value is 0s.
+-->Without duration, transition will not be visible.
+
+3)transition-delay:
+-->Specifies waiting time before transition starts.
+SYNTAX:
+transition-delay: time;
+EXAMPLE:
+transition-delay: 1s; /*Transition starts after waiting for 1 second.*/
+
+4)transition-timing-function:
+--> Specifies speed curve of transition.
+--> It controls HOW transition happens during the duration.
+SYNTAX:
+transition-timing-function: timing-function;
+TYPES OF TIMING FUNCTIONS
+1. ease - Default timing function where it Starts slow, becomes fast, then ends slow.
+2. linear - Same speed from start to end.
+3. ease-in - Starts slowly then becomes fast.
+4. ease-out - Starts fast then ends slowly.
+5. ease-in-out - Slow at beginning and ending , smooth in middle
+6. steps() - Transition happens step-by-step instead of smoothly.
+
+5)transition:
+--> transition is a shorthand property for:
+i) transition-property
+ii) transition-duration
+iii) transition-timing-function
+iv) transition-delay
+SYNTAX:
+transition: property duration timing-function delay;
+EXAMPLE:
+transition: width 2s ease 1s;

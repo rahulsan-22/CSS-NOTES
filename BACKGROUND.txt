@@ -1,0 +1,66 @@
+Background Properties:
+-->Background properties are CSS properties used to style the background of an element by applying color, image, position, repeat, size, and scrolling effects.
+-->Some of the background properties are:
+
+1)background-color:
+-->Used to set the background color of an element.
+-->Common Ways to define background color are Named Way,Rgb values,Rgba values and hexcode values
+Example:background-color: plum; 
+   background-color:rgb(0,0,255); 
+   background-color:rgba(0, 0, 255, 0.395); 
+   background-color: #ff0;
+
+2)background-image:
+-->Used to set an image as the background.
+Syntax:background-image: url("path");
+Example:background-image: url("./anushka.jpg");
+Note:
+-->If image not found → nothing shows
+-->Always use url()
+
+3)background-repeat:
+-->Controls how the background image repeats.
+-->It takes in several values like:
+Example:background-repeat: repeat; 
+   background-repeat: repeat-x; 
+   background-repeat: repeat-y; 
+   background-repeat: no-repeat;
+
+4)background-position:
+-->Used to control where the background image appears.
+-->It takes in predefined values like top,right,bottom,left,center and also in px units.
+Syntax:background-position: x y;
+Example:background-position: top right;
+        background-position: center;
+        background-position: 500px 200px;
+        background-position: 500px;
+Note:
+-->If one value → second defaults to center
+
+5)background-size:
+-->Controls the size of the background image.
+-->It takes values like cover,contain and also in px units
+Example:background-size:contain; 
+        background-size:cover; 
+        background-size:350px 400px; 
+        background-size:350px;
+Note:
+-->contain: 
+✔ Image fits inside container
+✔ Maintains aspect ratio
+✔ May leave empty space
+-->cover:
+✔ Image covers entire container
+✔ No empty space
+✔ Some part may be cropped
+-->If one value is given by default second will be considered as auto (single px is given width fixed, height auto)
+
+6)background-attachment:
+-->Controls whether the background scrolls or stays fixed.
+Example:background-attachment: scroll; (Background moves with page)
+        background-attachment: fixed; (Background stays fixed)
+
+7)background:
+-->It is a shorthand property to apply multiple background properties in one line.
+Syntax:background: color image repeat position/size attachment;
+Example:background:red url("path") no-repeat center/300px fixed;

@@ -1,0 +1,83 @@
+GRID:
+-->CSS Grid is also known as Grid Layout.
+-->It is used to create 2-dimensional layouts.
+-->Grid helps us arrange elements in both Horizontally(Rows) and Vertically(Columns)
+-->To use Grid:
+i)A common parent element is required.
+ii)The parent element should have: display: grid;
+
+Basic Structure of Grid:
+
+HTML
+<section class="container">
+    <div>Item-1</div>
+    <div>Item-2</div>
+    <div>Item-3</div>
+    <div>Item-4</div>
+</section>
+
+CSS
+.container{
+    display: grid;
+}
+
+Note:
+<section>  → Parent Element → Grid Container
+<div>      → Child Elements → Grid Items
+
+Grid Container Properties
+-->These properties are applied to the parent element.
+
+1)display:
+-->The display property is used to create a Grid layout.
+display: grid;
+
+2)grid-template-columns:
+-->Used to define the number of columns and their sizes.
+Ex:grid-template-columns: 200px 200px 200px; /*Creates 3 columns with 200px width each*/
+   grid-template-columns: 1fr 1fr 1fr; /*Creates 3 equal columns.*/
+   grid-template-columns: repeat(3,200px); /*Creates 3 columns with 200px width each*/
+Note:
+-->fr means Fractional Unit.
+-->It divides the available space equally.
+-->1fr 1fr (Both columns take equal space) and if 1fr 2fr (Second column takes double space compared to first column)
+
+3)grid-template-rows:
+-->Used to define the height of rows.
+Ex:grid-template-rows: 100px 100px; /*Creates 2 rows with height 100px each*/
+   grid-template-rows: 1fr 1fr 1fr; /*Creates 3 equal rows.*/
+   grid-template-rows: repeat(4,1fr); /*Creates 4 equal rows*/
+
+4)row-gap:
+-->Adds space between rows.
+Ex: row-gap: 20px;
+
+5)column-gap:
+-->Adds space between columns.
+Ex: column-gap: 20px;
+
+6)gap:
+-->gap is used to give spacing between rows and columns.
+Ex: gap: 10px 20px; /*10px row gap and 20px column gap*/
+    gap: 20px; /*20px gap for both rows and columns.*/
+
+
+Grid Item Properties:
+-->These properties are applied to child elements.
+
+1)grid-column:
+-->Used to define how many columns an item should occupy.
+Ex: grid-column: 1 / 3; /*Item occupies from column line 1 to column line 3*/
+
+2)grid-row:
+-->Used to define how many rows an item should occupy.
+Ex: grid-row: 1 / 3; /*Item occupies from row line 1 to row line 3*/
+
+3)grid-area:
+-->grid-area is a shorthand property for:
+i)grid-row-start
+ii)grid-column-start
+iii)grid-row-end
+iv)grid-column-end 
+Ex: grid-area: 1 / 1 / 3 / 3;
+

@@ -1,0 +1,29 @@
+Overflow:
+-->The overflow property in CSS is used to control what happens when content exceeds the size of its container (box).
+->It is mainly used when the content is larger than the element’s defined width/height.
+
+Values of Overflow:
+
+1)overflow: visible;
+-->This is the default value.
+-->The content is not clipped and may overflow outside the container and can overlap with other elements.
+
+2)overflow: hidden;
+-->The overflowing content is clipped (hidden).
+-->No scrollbars are provided.
+-->Useful when you want to restrict content strictly inside the container.
+
+3)overflow: scroll; 
+-->Scrollbars are always shown, even if content does not overflow.
+-->Allows users to scroll and view the hidden content.
+-->Can sometimes look unnecessary if content fits. 
+
+4)overflow: auto;
+-->Scrollbars are added only when needed (i.e., when content overflows). 
+-->More user-friendly compared to scroll.
+
+Important Note:
+-->You can control overflow separately for each axis:
+   overflow-x → horizontal direction
+   overflow-y → vertical direction
+-->Overflow works properly only when height/width is defined.

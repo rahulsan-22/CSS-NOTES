@@ -1,0 +1,59 @@
+1)text-decoration-line: 
+-->It is used to add a decorative line for the specified content. 
+-->It can take the values like-
+     Ex:text-decoration-line:overline|underline|line-through|none; 
+
+2)text-decoration-style: 
+-->It is used to set the style for a specified decorative line. 
+-->It can take the values like-
+        Ex:text-decoration-style:solid|dashed|dotted|double|wavy; 
+
+3)text-decoration-color: 
+-->It is used to set the color for the specified decorative line 
+-->It can take values like
+       Ex:text-decoration-color: orange|rgb(255,30,10)|rgba(10,20,30,0.8)|#ffffff; 
+
+4)text-decoration-thickness: 
+-->It is used to set the thickness for the specified decorative line. 
+       Ex:text-decoration-thickness:2px; 
+
+5)text-decoration: 
+-->It is a shorthand property for text-decoration-line,text-decoration-color,text-decoration-style,text-decoration-thickness 
+      Ex:text-decoration: 5px line-through wavy orange;
+
+6)text-indent:
+-->It is used to add the spacing before the starting of a content.
+Ex: text-indent:300px;
+
+7)text-transform:
+-->It is used to convert the content into uppercase or lowercase or capitalize form(starting letter of each word is in uppercase).
+Ex: text-transform:uppercase|lowercase|capitalize;
+
+8)word-spacing:
+-->It is used to add the space between the word by default. It takes the values as normal.
+Ex: word-spacing:normal|10px.
+
+9)letter-spacing:
+-->It is used to add space between the letters. It takes the default value as normal.
+Ex: letter-spacing:normal|30px.
+
+10)line-height:
+-->This property is used to specify the space between the lines.
+By default it takes the value as normal.
+Ex: line-height:normal|200px;
+
+11)text-align: 
+-->It is used to set the horizontal alignment for the text. 
+-->It can take the values like  
+Ex: text-align: left|center|right|justify; 
+
+12)text-align-last: 
+-->It is used to set the horizontal alignment for the last line of a text. 
+-->It can take the values like: 
+Ex: text-align-last: left|center|right|justify; 
+
+13)text-shadow:
+-->It is used to add the shadow effect for the text content. 
+-->This property takes 4 values . 
+Syntax: text-shadow:x-axis y-axis blur color; 
+    EX: text-shadow: 10px 20px 10px blue; 

@@ -1,0 +1,86 @@
+POSITION:
+-->The position property is used to control how an element is placed (positioned) on the webpage. 
+-->There are several values that can be specified:
+     position: static | relative | absolute | fixed | sticky;
+-->To specify the exact position of an element, CSS provides helper properties:
+             top | right | left | bottom 
+
+1)position: static;
+-->By default, all elements have position: static (i.e., normal document flow). 
+-->It does not respond to top, right, bottom, left, z-index
+   Ex: div{
+         position: static;
+         top: 20px; /* No effect */
+        }
+
+2) position: relative;
+-->The element moves relative to its original position. 
+   Ex: div{ 
+          position: relative; 
+          top:200px;
+          left:550px;
+        } 
+
+3)position: absolute;
+-->The element is positioned relative to the nearest positioned ancestor (i.e., parent with position: relative | absolute | fixed | sticky).
+-->If no such parent exists → it is positioned relative to the viewport.
+-->The element is removed from normal document flow.
+   Ex: #parent{ 
+          height:700px; 
+          width:800px; 
+          background-color:yellow; 
+          margin: 40px; 
+          position: relative; 
+       } 
+      #child{ 
+          height:330px; 
+          width:300px; 
+          background-color: blue; 
+          position: absolute; 
+          top:20px; 
+        } 
+
+4)position: fixed;
+-->The element is positioned relative to the viewport.
+-->It stays fixed even when scrolling.
+-->Also removed from normal document flow
+   Ex: div{ 
+            height:100px;
+            width:100px; 
+            background: deepskyblue;
+            position: fixed; 
+            top:50px; 
+            left:50px; 
+          } 
+
+5)position: sticky;
+-->The element behaves like relative initially, fixed after reaching a specific point.
+      Ex: div{ 
+            height:100px;
+            width:100px; 
+            background:blue;
+            position:sticky; 
+            top:50px; 
+          } 
+
+z-index: 
+-->Controls the stack order of elements
+-->Works only on: position: relative | absolute | fixed | sticky (but not static)
+  >Elements with higher z-index value are placed at the top level. 
+     Ex:#img1{ 
+          position: absolute; 
+          z-index: 100; 
+        } 
+        #img2{ 
+           position: absolute; 
+           z-index: 200; 
+        }
+
+Note:
+-->Negative values move elements in the opposite direction relative to the applied property
+ Ex:top: -20px → moves up
+   left: -20px → moves left
+-->Among top and bottom ,top is considered as the highest priority in the case of left and right ,left will be considered as of more priority.
+-->Absolute and Fixed remove elements from normal document flow.
+
+ 

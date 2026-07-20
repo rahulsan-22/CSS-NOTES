@@ -1,0 +1,126 @@
+//!FLEX:
+-->It is also known as flex-box.
+-->It is used to create 1-dimensional layouts.
+-->Flexbox helps us align and distribute elements either Horizontally (Row) OR
+Vertically (Column) 
+-->To use Flexbox:
+   i)A common parent element is required.
+  ii)The parent element should have: 
+      display: flex;
+
+//!Basic Structure of Flexbox:
+HTML
+   <section class="container">
+    <div>Item-1</div>
+    <div>Item-2</div>
+    <div>Item-3</div>
+   </section>
+
+CSS
+  .container{
+    display: flex;
+  }
+
+//!Note:
+  <section>  → Parent Element → Flex Container
+  <div>      → Child Elements → Flex Items
+
+
+//!Flex Container Properties
+-->These properties are applied to the parent element.
+
+//!1)display: 
+-->The display property is used to create a Flexbox layout. 
+      i.e. display: flex; 
+Note: Child elements will come in a row by default.
+
+//!2)flex-direction:
+-->The flex-direction property is used to change the direction of flex items.
+Syntax:
+flex-direction: row | row-reverse | column | column-reverse;
+Values:
+i) row (Default):Items are arranged from left to right.
+ii)row-reverse: Items are arranged from right to left.
+iii)column: Items are arranged from top to bottom.
+iv)column-reverse: Items are arranged from bottom to top.
+
+//!3)flex-wrap:
+-->By default, flex items try to fit into a single line.
+-->The flex-wrap property allows items to move to the next line when there is not enough space.
+Syntax:
+flex-wrap: nowrap | wrap | wrap-reverse;
+Values:
+i)nowrap (Default): All items stay in a single line.
+ii)wrap: Items move to the next line if needed.
+iii)wrap-reverse: Items wrap in reverse order.
+
+//!4)row-gap: 
+-->Adds space between rows.
+Example: 
+row-gap: 20px; 
+
+//!5)column-gap: 
+-->Adds space between columns.
+Example:
+column-gap: 20px; 
+
+//!6)gap: 
+-->gap is the shorthand property for row-gap
+and column-gap
+Syntax:
+gap: row-gap column-gap;
+Example:
+gap: 20px 30px; /* row-gap column-gap */
+gap: 30px; /* takes for both column gap and row gap */
+  
+
+Main-Axis and Cross-Axis:
+Main Axis:
+The direction in which flex items are flowing.
+Cross Axis:
+The direction perpendicular to the main axis.
+
+NOTE:
+| flex-direction | Main Axis  | Cross Axis |
+| -------------- | ---------- | ---------- |
+| row            | Horizontal | Vertical   |
+| column         | Vertical   | Horizontal |
+
+7)justify-content: 
+-->Used to align flex items along the main axis.
+Syntax:
+justify-content: flex-start | center | flex-end | space-around | space-between | space-evenly;
+Values:
+i) flex-start: Items start from the beginning.
+ii)center: Items move to the center.
+iii)flex-end: Items move to the end.
+iv)space-around: Equal space around items.
+v)space-between: Equal space between items.
+vi)space-evenly: Equal space everywhere.
+
+8)align-items: 
+-->Used to align flex items along the cross axis.
+Syntax:
+align-items: flex-start | center | flex-end;
+Values:
+i)flex-start: Items align at the start.
+ii)center: Items align at the center.
+iii)flex-end: Items align at the end.
+
+Flex Item Properties:
+-->These properties are applied to the child elements.
+
+1)flex-basis: 
+-->flex-basis is used to set the initial size of a flex item.
+-->Its behavior depends on flex-direction.
+Note:
+| flex-direction | flex-basis acts like |
+| -------------- | -------------------- |
+| row            | width                |
+| column         | height               |
+
+Example:
+flex-basis:200px;
+flex-basis:40%;
+
+ 

@@ -1,0 +1,47 @@
+MEDIA QUERIES:
+-->Media Queries are used to make a website responsive on different screen sizes and devices.
+-->They allow us to apply different CSS styles based on conditions like screen width.
+-->Media Queries help websites look good on mobiles, tablets, laptops, and desktops.
+
+SYNTAX:
+@media condition{
+    selector{
+        property:value;
+    }
+}
+Example:
+@media (max-width:600px){
+    body{
+        background-color:black;
+    }
+}
+-->If the screen width becomes 600px or less, the background color changes to black.
+
+RESPONSIVE BREAKPOINTS:
+Device Type	Screen Size
+ Mobile	         0px - 600px
+ Tablet	         601px - 768px
+ Laptop	         769px - 1024px
+ Desktop	1025px and above
+ 
+COMMONLY USED MEDIA FEATURES:
+
+i)max-width:
+-->Applies styles when the screen width is LESS THAN or EQUAL TO the specified width.
+Example:
+@media (max-width:768px){
+    h1{
+        color:red;
+    }
+}
+-->The <h1> color becomes red when the screen width is 768px or smaller.
+
+ii)min-width:
+-->Applies styles when the screen width is GREATER THAN or EQUAL TO the specified width.
+Example:
+@media (min-width:768px){
+    h1{
+        color:blue;
+    }
+}
+-->The <h1> color becomes blue when the screen width is 768px or larger.
