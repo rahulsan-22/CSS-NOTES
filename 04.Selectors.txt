@@ -9,6 +9,8 @@
 4) Pseudo-element Selectors
 5) Attribute Selectors
 
+-------------------------------------------------------------------------------------------
+
 //!Simple Selectors:
 -->Simple selectors are used to select HTML elements based on their tag name, id, class, or all elements.
 
@@ -73,7 +75,6 @@ p{
 -->Multiple elements can share the same class name.
 -->One HTML element can have multiple class names.
 -->A class name should not start with a number.
--->A class name should not contain spaces.
 
 //!4. Group Selector
 -->The Group Selector is used to apply the same CSS properties to multiple selectors at once.
@@ -88,8 +89,8 @@ selector3{
 
 //!Example:
 h1,
-h2,
-p{
+#demo,
+.para{
     color: red;
 }
 
@@ -112,3 +113,240 @@ p{
 2) Class
 3) Element
 4) Universal
+
+-------------------------------------------------------------
+
+//! Combinator Selectors
+-->They are used to select HTML elements based on the relationship between two or more elements.
+-->They help target elements depending on their parent-child or sibling relationship.
+
+//!Types of Combinator Selectors
+1) Descendant Combinator ( )
+2) Child Combinator (>)
+3) Adjacent Sibling Combinator (+)
+4) General Sibling Combinator (~)
+
+//!Tree Structure
+<section>
+│
+├── <p> Para - 1
+├── <h1> Heading - 1
+├── <p> Para - 2
+├── <p> Para - 3
+├── <h1> Heading - 2
+├── <div>
+│   ├── <p> Para - 4
+│   ├── <h1> Heading - 3
+│   └── <p> Para - 5
+├── <p> Para - 6
+└── <h1> Heading - 4
+
+//!1. Descendant Combinator Selector ( )
+--> It selects all descendant elements (direct children, grandchildren, great-grandchildren, and so on) of a specified parent element.
+-->The symbol used is a space ( ).
+
+//*Syntax
+parent child{
+    property: value;
+}
+
+//*Example
+section p{
+    color: blue;
+}
+
+//*Output
+All <p> elements inside every <section> will become blue.
+
+//!2. Child Combinator Selector (>)
+-->It selects only the direct child elements of a specified parent.
+-->It does not select nested descendants.
+-->The symbol used is greater than (>).
+
+//*Syntax
+parent > child{
+    property: value;
+}
+
+//*Example
+section > p{
+    color: blue;
+}
+
+//*Output:
+Only Paragraph 1,2,3,6 become blue.
+Paragraph 4 and Paragraph 5 are not direct children of <section>.
+
+//!3. Adjacent Sibling Combinator Selector (+)
+-->It selects the immediately next sibling of a specified element.
+-->The symbol used is plus (+).
+
+//*Syntax
+element1 + element2{
+    property: value;
+}
+
+//*Example
+h1 + p{
+    color: blue;
+}
+
+//*Output
+Only Para 2,Para 5 becomes blue because it is the immediate next sibling of <h1>.
+
+//!4. General Sibling Combinator Selector (~)
+-->It selects all sibling elements that come after a specified element.
+-->The symbol used is tilde (~).
+
+//*Syntax
+element1 ~ element2{
+    property: value;
+}
+
+//*Example
+h1 ~ p{
+    color: blue;
+}
+
+//*Output
+Both Para 2,3,5,6 become blue because they are sibling <p> elements that appear after <h1>.
+
+----------------------------------------------------------------------------
+
+//! Pseudo-class Selectors
+-->They are used to select an element based on its special state, user interaction, or position in the HTML document.
+-->Pseudo-class selectors are prefixed with a single colon (:).
+
+//!Syntax
+selector:pseudo-class{
+    property: value;
+}
+
+//!Commonly Used Pseudo-class Selectors
+:hover
+:focus
+:visited
+:active
+:first-child
+:last-child
+:nth-child()
+:checked
+:not()
+
+//!1) :hover
+-->It is used to apply styles when the user places the mouse pointer over an element.
+
+//*Example
+img:hover{
+    border:2px solid red;
+}
+
+//!2) :focus
+-->It is used to apply styles when an element receives focus.
+-->An element receives focus when the user clicks on it or navigates to it using the Tab key.
+
+//*Example
+input:focus{
+    color: purple;
+    background-color: bisque;
+}
+
+//!3) :visited
+-->It is used to style links that the user has already visited.
+-->It works only with the <a> element.
+-->By default, visited links usually appear purple (browser default).
+
+//*Example
+a:visited{
+    color:pink;
+}
+
+//!4) :active
+-->It is used to style an element while it is being activated (for example, while the mouse button is pressed).
+-->It is commonly used with links and buttons.
+-->By default, active links usually appear red (browser default).
+
+//*Example
+a:active{
+    color:green;
+}
+
+//!5) :first-child
+-->It selects the first child element of its parent.
+
+//*Example:
+div > p:first-child{
+    color:blue;
+}
+-->Only Para - 1 becomes blue.
+
+//!6) :last-child
+-->It selects the last child element of its parent.
+
+//*Example
+div > p:last-child{
+    color:orange;
+}
+-->Only Para - 10 becomes blue.
+
+//!7) :nth-child()
+-->It selects elements based on their position within the parent.
+
+//*Example
+div > p:nth-child(2){
+    color:red;
+}
+-->Selects the second child.
+
+div > p:nth-child(even){
+    color:green;
+}
+-->Select Even Elements
+
+div > p:nth-child(odd){
+    color:pink;
+}
+-->Select Odd Elements
+
+div > p:nth-child(2n){
+    color:blue;
+}
+-->Selects every second element.
+
+//!8) :checked
+-->The :checked pseudo-class selects checked radio buttons and checkboxes.
+
+//*Example
+HTML
+<label>Gender</label>
+<input type="radio" name="gender" value="male">
+<label>Male</label>
+<input type="radio" name="gender" value="female">
+<label>Female</label>
+
+CSS
+input:checked + label{
+    color:purple;
+}
+
+-->The label next to the selected radio button becomes purple.
+
+//!9) :not()
+-->It is used to exclude specific elements from a selector.
+-->It is commonly used when styles should be applied to all matching elements except one or more.
+
+//!Example
+HTML
+<ul>
+    <li>Monty</li>
+    <li>Yasin</li>
+    <li>Ajit</li>
+    <li id="exclude">Pavan</li>
+</ul>
+
+CSS
+ul > li:not(#exclude){
+    color:tomato;
+}
+
+-->All list items become pink except Pavan.
