@@ -1,0 +1,129 @@
+//!Border
+
+//!What is Border?
+-->A border is a line that appears around an HTML element.
+
+//!Border Properties
+CSS provides the following properties to create and customize borders:
+i)border-width
+ii)border-style
+iii)border-color
+iv)border (Shorthand Property)
+v)border-radius
+
+//!1. border-width
+-->The border-width property is used to specify the thickness of the border.
+
+//!Syntax
+border-width: <length>;
+
+//!Example
+border-width: 5px;
+
+//!Individual Border Width Properties
+To specify different border widths on each side, use:
+
+//!Example
+border-top-width:20px;
+border-right-width:30px;
+border-bottom-width:40px;
+border-left-width:50px;
+
+//!2. border-style
+-->The border-style property specifies the appearance (style) of the border.
+
+//!Syntax
+border-style: value;
+
+//!Values
+solid
+dashed
+dotted
+double
+groove
+ridge
+none
+
+//!Example
+border-style:solid;
+
+//!Individual Border Style Properties
+
+//!Examples:
+border-top-style:dotted;
+border-right-style:double;
+border-bottom-style:dashed;
+border-left-style:solid;
+
+//!3. border-color
+-->The border-color property specifies the color of the border.
+
+//!Syntax
+border-color:any-color;
+
+//!Example
+border-color:red;
+
+//!Individual Border Color Properties
+
+//!Example
+border-top-color:red;
+border-right-color:green;
+border-bottom-color:blue;
+border-left-color:purple;
+
+//!4. border (Shorthand Property)
+-->The border property is the shorthand for:
+border-width
+border-style
+border-color
+
+//!Recommended Order
+border: width style color;
+
+//!Example
+border:2px solid red;
+
+//!Important Notes
+
+1.Among all border properties, border-style is mandatory.
+Without border-style, the border will not be displayed.
+
+Example
+border-width:5px;
+border-color:red;
+
+Output: No border is displayed.
+
+2.If only border-style is specified,
+border-style:solid;
+
+the browser automatically uses:
+Default border width → medium
+Border color → current text color (currentColor)
+
+
+//!5. border-radius
+-->The border-radius property is used to create rounded corners.
+
+//!Syntax
+border-radius:<length>;
+
+//!Example
+border-radius:20px;
+
+//!Individual Border Radius Properties
+
+//!Example
+border-top-left-radius:30px;
+border-top-right-radius:40px;
+border-bottom-right-radius:50px;
+border-bottom-left-radius:60px;
+
+//!Creating a Circle
+-->If the width and height of an element are equal, using border-radius:50%; creates a perfect circle.
+
+//!Example
+width:150px;
+height:150px;
+border-radius:50%;
