@@ -442,7 +442,7 @@ input::placeholder{
 
 //!Attribute Selectors
 -->Attribute Selectors are used to select HTML elements based on the presence of an attribute or the value of an attribute.
--->They are enclosed within square brackets ([]).
+-->They are enclosed within square brackets [].
 
 //!Syntax
 [attribute]{
@@ -479,12 +479,7 @@ input::placeholder{
     property: value;
 }
 
-//!Example 1:
+//!Example:
 [height="300"]{
-    border:2px solid red;
-}
-
-//!Example 2:
-[alt="image"]{
     border:2px solid red;
 }

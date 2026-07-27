@@ -1,0 +1,205 @@
+//!CSS Box Model
+-->The CSS Box Model describes how the browser calculates the total space occupied by an HTML element on a webpage.
+-->Every HTML element is treated as a rectangular box by the browser.
+
+//!Each box consists of four parts:
+1)Margin
+2)Border
+3)Padding
+4)Content
+
+//! Structure of the Box Model
++-----------------------------------------+
+|                Margin                              |
+|  +-----------------------------------+   |
+|  |             Border                            |  |
+|  |  +-----------------------------+      |  |
+|  |  |          Padding                         |  |  |
+|  |  |  +-----------------------+       |  |  |
+|  |  |  |       Content                      |  |  |  |
+|  |  |  +-----------------------+        |  |  |
+|  |  +-----------------------------+      |  |
+|  +-----------------------------------+   |
++-----------------------------------------+
+
+//!Components of the Box Model
+
+//!1. Margin
+-->Margin is the space outside the border or around the elements border.
+-->It creates space between neighboring elements.
+
+//!Syntax
+margin:value;
+
+//!Example
+margin:20px;
+
+//!Shorthand Values
+margin:10px; (Applies to all four sides)
+margin:10px 20px; (Top & Bottom → 10px , Left & Right → 20px)
+margin:10px 20px 30px; (Top → 10px , Left & Right → 20px , Bottom → 30px)
+margin:10px 20px 30px 40px; (Top → 10px,Right → 20px,Bottom → 30px,Left → 40px)
+
+//!Individual Margin Properties
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+//!Notes
+Margin can have negative values.
+
+//!2. Border
+-->The Border is the line surrounding the padding and content.
+
+//!Example
+border:2px solid blue;
+
+//!Note:
+The shorthand includes: Border Width, Border Style and Border Color
+
+//!3. Padding
+-->Padding is the space between the content and the border.
+-->It creates internal spacing around the content.
+
+//!Syntax
+padding: value;
+
+//!Example
+padding:20px;
+
+//!Shorthand Values
+padding:10px; (Applies to all four sides)
+padding:10px 20px; (Top & Bottom → 10px , Left & Right → 20px)
+padding:10px 20px 30px; (Top → 10px , Left & Right → 20px , Bottom → 30px)
+padding:10px 20px 30px 40px; (Top → 10px,Right → 20px,Bottom → 30px,Left → 40px)
+
+
+//!Individual Padding Properties
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+//!Note
+Padding cannot have negative values.
+Remember: TRBL (Top → Right → Bottom → Left)
+
+//!4. Content
+-->The Content area is the space where the actual content of an element is displayed.
+-->It may contain:
+Text
+Images
+Videos
+Other HTML elements ...
+
+//!Example
+<h1>Good Afternoon</h1>
+
+//!Note:
+By default, the width and height properties affect only the content area.
+
+-----------------------------------------------------------------
+
+//!Box Sizing
+--The box-sizing property specifies how the browser calculates the width and height of an element.
+
+//!1. content-box
+-->This is the default value.
+-->The specified width and height apply only to the content area.
+
+//!Example
+box-sizing:content-box;
+
+//!Formula
+Total Width = Width + Padding + Border
+
+//!2. border-box
+-->The specified width and height include:
+Content
+Padding
+Border
+-->The browser automatically adjusts the content size.
+
+//!Example
+box-sizing:border-box;
+
+//!Formula
+Total Width = Width
+
+//!Note:
+-->No extra width is added for padding and border.
+-->In modern web development, it is recommended to use:
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+-->This creates more predictable layouts and simplifies width and height calculations.
+
+------------------------------------------------------------------------------------
+
+//!Box Shadow
+-->The box-shadow property is used to add one or more shadow effects around an HTML element.
+-->Multiple shadows can be applied to the same element by separating them with commas.
+
+//!Syntax
+box-shadow: x-offset y-offset blur-radius spread-radius color inset;
+
+//!Example
+box-shadow:0px 0px 10px 10px gray inset;
+
+//!Values of box-shadow
+
+//!1. X-Offset (Horizontal Offset)
+The X-Offset specifies the horizontal position of the shadow.
+//!Note:
+Positive value → Shadow moves to the right.
+Negative value → Shadow moves to the left.
+0 → No horizontal movement.
+
+//!2. Y-Offset (Vertical Offset)
+The Y-Offset specifies the vertical position of the shadow.
+//!Note:
+Positive value → Shadow moves down.
+Negative value → Shadow moves up.
+0 → No vertical movement.
+
+//!3. Blur Radius
+The Blur Radius controls the softness of the shadow.
+//!Note:
+Larger value → Softer shadow
+0 → Sharp shadow
+Negative values are not allowed
+
+//!4. Spread Radius
+The Spread Radius controls the size of the shadow.
+//!Note:
+Positive value → Shadow expands.
+Negative value → Shadow shrinks.
+0 → Default size.
+
+//!5. Color
+Specifies the color of the shadow.
+
+//!6. inset
+The inset keyword creates an inner shadow.
+If omitted, the shadow is created outside the element.
+
+//!Multiple Shadows
+Multiple shadows can be applied by separating each shadow with a comma.
+
+//!Example
+box-shadow:
+0px 0px 0px 10px red,
+0px 0px 0px 20px green,
+0px 0px 0px 30px blue;
+
+//!Important Notes
+1.The X-Offset and Y-Offset are mandatory.All other values are optional.
+
+2.The default values are:
+Blur Radius   → 0
+Spread Radius → 0
+Color         → Current text color (currentColor) in modern browsers
+Inset         → Outer shadow
