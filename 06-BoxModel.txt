@@ -102,7 +102,7 @@ By default, the width and height properties affect only the content area.
 -----------------------------------------------------------------
 
 //!Box Sizing
---The box-sizing property specifies how the browser calculates the width and height of an element.
+-->The box-sizing property specifies how the browser calculates the width and height of an element.
 
 //!1. content-box
 -->This is the default value.

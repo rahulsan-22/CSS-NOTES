@@ -1,0 +1,79 @@
+//!CSS Colors
+-->The color property is used to specify the text color of an HTML element.
+
+//!Syntax
+color: value;
+
+//!Note:
+-->The value can be specified using different color formats.
+
+//!Types of CSS Colors
+1)Named Colors
+2)RGB
+3)RGBA
+4)Hexadecimal (Hex)
+
+//!1. Named Colors
+-->CSS provides limited predefined color names that can be used directly.
+
+//!Syntax
+color: colorName;
+
+//!Example
+h1{
+    color: firebrick;
+}
+
+//!2. RGB (Red, Green, Blue)
+-->The RGB color model represents colors using the intensity of Red, Green, and Blue.
+-->Each color value ranges from 0 to 255.
+
+//!Syntax
+color: rgb(red, green, blue);
+
+//!Example
+h1{
+    color: rgb(255, 255, 100);
+}
+
+//!3. RGBA (Red, Green, Blue, Alpha)
+-->RGBA is an extension of RGB that includes an Alpha (Transparency) value.
+-->The Alpha value ranges from:
+0 → Fully Transparent
+1 → Fully Opaque
+
+//!Syntax
+color: rgba(red, green, blue, alpha);
+
+//!Example
+h1{
+    color: rgba(255,255,100,0.5);
+}
+
+//!4. Hexadecimal (Hex)
+-->Hexadecimal colors represent RGB values using hexadecimal numbers.
+-->The format is: #RRGGBB
+
+Where:
+RR → Red
+GG → Green
+BB → Blue
+
+-->Each pair ranges from 00 to FF (Hexadecimal).
+
+//!Syntax
+color:#RRGGBB;
+
+//!Example
+h1{
+    color:#ff0000;
+}
+
+//!Short Hex Format
+The shorthand format is: #RGB
+
+//!Example
+h1{
+    color:#f00;
+}
+-->This is equivalent to:#ff0000

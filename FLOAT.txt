@@ -1,6 +1,0 @@
-FLOAT:
-
->In CSS the float property specifies weather the element should be floated (placed) to the right or left of its containing element (parent element)
->It allows the content or the next element to occupy its space when specified with the float property. 
->Float property can take the values like: 
-  float : none | left | right; 
