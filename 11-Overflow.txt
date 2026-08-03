@@ -1,8 +1,8 @@
-Overflow:
+//!Overflow:
 -->The overflow property in CSS is used to control what happens when content exceeds the size of its container (box).
 ->It is mainly used when the content is larger than the element’s defined width/height.
 
-Values of Overflow:
+//!Values of Overflow:
 
 1)overflow: visible;
 -->This is the default value.
@@ -22,7 +22,7 @@ Values of Overflow:
 -->Scrollbars are added only when needed (i.e., when content overflows). 
 -->More user-friendly compared to scroll.
 
-Important Note:
+//!Important Note:
 -->You can control overflow separately for each axis:
    overflow-x → horizontal direction
    overflow-y → vertical direction

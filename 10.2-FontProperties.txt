@@ -1,4 +1,4 @@
-FONT PROPERTIES:
+//!FONT PROPERTIES:
 -->Font properties in CSS are used to control the appearance, style, size, thickness, and typeface of text displayed on a webpage.
 -->Font properties help you design how text looks in the browser.
 
