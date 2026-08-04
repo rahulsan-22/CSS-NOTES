@@ -29,7 +29,7 @@ Example: b{
  >Takes margin on left and right side but padding on all sides
  >Ex:span, a, label, formatting tags (b, i, strong etc..)
 
-iii)display:inline-block;
+//! iii)display:inline-block;
    >These are the elements that behave like inline but take block-level properties like height and width.
    >In simple words,Hybrid behavior: inline + block 
 Ex:input,img etc..
@@ -40,10 +40,10 @@ Ex:input,img etc..
       display: inline-block;
     }
 
-iv)display:none;
+//! iv)display:none;
    >Element is completely removed from layout.
    >No space is reserved
 
-v)visibility: hidden;
+//! v)visibility: hidden;
    >Element is hidden but still occupies space.
    >Space is reserved.

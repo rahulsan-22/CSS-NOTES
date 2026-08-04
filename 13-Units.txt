@@ -1,24 +1,24 @@
-UNITS:
+//!UNITS:
 -->Units are used to specify measurements for properties like width, height, margin, padding, font-size, etc. 
 
-Types:
+//!Types:
 In general, there are two types of units in CSS:
 i) Absolute units
 ii)Relative units
 
-i) Absolute Units:
+//!i) Absolute Units:
 -->These are fixed units and do not change based on other elements or screen size.
 
-1)Pixel (px):
+//!1)Pixel (px):
 -->Commonly used to set fixed sizes.
 -->Approximately 1px represents a single dot on the screen. 
   >1 inch = 96px. 
   >2.54cm = 96px. 
 
-ii) Relative Units:
+//!ii) Relative Units:
 -->These units change their value relative to another reference (parent, root, or viewport).
 
-1) Percentage (%)
+//!1) Percentage (%)
 -->Value is relative to the parent element. 
 Ex: If a child element has a width of 50% it means that the element is taking half width respect of it's parent element. 
       #parent{ 
@@ -28,26 +28,26 @@ Ex: If a child element has a width of 50% it means that the element is taking ha
         width:50%; /* Takes 250px */ 
       } 
 
-2) vh (Viewport Height)
+//!2) vh (Viewport Height)
 -->1vh = 1% of the viewport height
 -->Used for full-screen layouts 
    Ex: body{ 
           height:100vh; 
         } 
 
-3) vw (Viewport Width)
+//!3) vw (Viewport Width)
 -->1vw = 1% of the viewport width
    Ex: body{ 
           width: 80vw; 
         }
 Note: Viewport refers to the available space on the webpage(UI)
 
-4)em: 
+//! 4)em: 
 -->Relative to the parent element’s font-size 
 -->Default browser font-size = 16px, so 1em = 16px
 Ex: If parent font-size = 20px → 1em = 20px 
 
-5)rem: 
+//! 5)rem: 
 -->Relative to the root element (html) font-size.
 -->Default root element font-size = 16px, so 1rem=16px.
 Ex: If html tag font size = 10px → 1rem = 10px.
