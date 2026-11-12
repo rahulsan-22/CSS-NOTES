@@ -1,18 +1,22 @@
-Introduction to CSS
-History of Css
-Ways of adding CSS (Inline, Internal, External)
-Selectors
-Colors
-Units 
-Background Properties
-Box Model
-Typography & Fonts
-Display Property 
-Position
-Flex
-Grid
-Media Queries
-Overflow
-Transitions
-Animations
-CSS Variables
+//!CSS Syllabus – Topic List
+1. Introduction to CSS
+2. History of CSS
+3. Ways of Adding CSS
+4. Selectors
+5. Border Properties
+6. Box Model
+7. Colors
+8. Background Properties
+9. Gradients
+10. Text Properties
+11. Font Properties
+12. Overflow
+13. Display Properties
+14. Units
+15. Position Property
+16. Flexbox
+17. Grid
+18. Transitions
+19. Transforms
+20. Animations
+21. Media Queries

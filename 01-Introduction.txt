@@ -1,0 +1,6 @@
+//! Introduction
+--> CSS stands for Cascading Style Sheets.
+--> CSS is used to style HTML elements by adding colors, fonts, spacing, layouts, alignments, animations, etc.
+--> Cascading means applying styles in a specific order based on priority and specificity.
+--> Style Sheets means a collection of rules used to style HTML elements.
+--> In simple words, CSS makes our webpages look attractive, organized, and user-friendly.

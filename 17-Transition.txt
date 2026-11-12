@@ -1,17 +1,17 @@
-TRANSITION:
+//!TRANSITION:
 -->Transition is used to create smooth changes between one CSS state to another.
 -->It helps animate property changes instead of changing them instantly.
 -->Transitions are mostly used with pseudo-classes like :hover, :focus, :active, etc.
 -->Transition makes websites look more interactive and attractive.
 
-TRANSITION PROPERTIES:
+//!TRANSITION PROPERTIES:
 There are mainly 4 transition properties:
 i)transition-property
 ii)transition-duration
 iii)transition-delay
 iv)transition-timing-function:
 
-1)transition-property:
+//!1)transition-property:
 -->Specifies which CSS property should get the transition effect.
 SYNTAX:
 transition-property: propertyName;
@@ -21,7 +21,7 @@ transition-property: width,background-color; /*Both width and background-color g
 Note:
 If the value is all it Applies transition to all changing properties.
 
-2)transition-duration:
+//!2)transition-duration:
 -->Specifies how long the transition should take.
 -->Duration can be given in:
    i) seconds (s)

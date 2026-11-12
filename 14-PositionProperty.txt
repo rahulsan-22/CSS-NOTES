@@ -1,11 +1,11 @@
-POSITION:
+//!POSITION:
 -->The position property is used to control how an element is placed (positioned) on the webpage. 
 -->There are several values that can be specified:
      position: static | relative | absolute | fixed | sticky;
 -->To specify the exact position of an element, CSS provides helper properties:
              top | right | left | bottom 
 
-1)position: static;
+//!1)position: static;
 -->By default, all elements have position: static (i.e., normal document flow). 
 -->It does not respond to top, right, bottom, left, z-index
    Ex: div{
@@ -13,7 +13,7 @@ POSITION:
          top: 20px; /* No effect */
         }
 
-2) position: relative;
+//!2) position: relative;
 -->The element moves relative to its original position. 
    Ex: div{ 
           position: relative; 
@@ -21,7 +21,7 @@ POSITION:
           left:550px;
         } 
 
-3)position: absolute;
+//!3)position: absolute;
 -->The element is positioned relative to the nearest positioned ancestor (i.e., parent with position: relative | absolute | fixed | sticky).
 -->If no such parent exists → it is positioned relative to the viewport.
 -->The element is removed from normal document flow.
@@ -40,7 +40,7 @@ POSITION:
           top:20px; 
         } 
 
-4)position: fixed;
+//!4)position: fixed;
 -->The element is positioned relative to the viewport.
 -->It stays fixed even when scrolling.
 -->Also removed from normal document flow
@@ -53,7 +53,7 @@ POSITION:
             left:50px; 
           } 
 
-5)position: sticky;
+//!5)position: sticky;
 -->The element behaves like relative initially, fixed after reaching a specific point.
       Ex: div{ 
             height:100px;
@@ -76,7 +76,7 @@ z-index:
            z-index: 200; 
         }
 
-Note:
+//!Note:
 -->Negative values move elements in the opposite direction relative to the applied property
  Ex:top: -20px → moves up
    left: -20px → moves left
